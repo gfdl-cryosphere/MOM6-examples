@@ -44,3 +44,5 @@ lcov.*
 cryo-examples
 ice_null
 ocean_null
+src/ice_amip
+src/ice_sis

@@ -5,4 +5,4 @@ mkdir -p build/ice_oceanFMS2_SIS2_c5_nonsym_icepack/
 (cd build/ice_oceanFMS2_SIS2_c5_nonsym_icepack/; \
 ../../src/mkmf/bin/mkmf -t ../../src/mkmf/templates/ncrc5-intel.mk -o '-I../fms2' -p MOM6_SIS2_Alex_bergs -l '-L../fms2 -lfms' -c '-Duse_AM3_physics -D_USE_LEGACY_LAND_ -DUSE_FMS2_IO -Duse_libMPI -Duse_netCDF' path_names )
 source ./build/env_c5
-make -C ./build/ice_oceanFMS2_SIS2_c5_nonsym_icepack NETCDF=3 REPRO=1 MOM6_SIS2_Alex_bergs -j
+make -C ./build/ice_oceanFMS2_SIS2_c5_nonsym_icepack NETCDF=3 REPRO=1 MOM6_SIS2_Alex_bergs -j 8
